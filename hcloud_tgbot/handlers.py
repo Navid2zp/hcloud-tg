@@ -12,6 +12,12 @@ from hcloud_tgbot.validators import user_validator, action_validator
 
 
 class BotHandler:
+    """
+    Main handler class
+
+    Use this class to initiate and run the bot.
+    All command/message handlers can be found here
+    """
     def __init__(self):
         self.updater = Updater(token=config.BOT_TOKEN, use_context=True)
         self.dispatcher = self.updater.dispatcher
