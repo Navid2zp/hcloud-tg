@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  hcloud-tg:
+    container_name: hcloud-tgbot
+    image: navid2zp/hcloud-tg
+    env_file: ./env.list
+    restart: always
