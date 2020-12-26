@@ -4,7 +4,7 @@ from telegram import Update, ParseMode, ChatAction
 from telegram.ext import CommandHandler, MessageHandler
 from telegram.ext import Updater, CallbackContext, CallbackQueryHandler, Filters, Handler
 
-from builders import MessageBuilder, MenuBuilder
+from hcloud_tgbot.builders import MessageBuilder, MenuBuilder
 from hcloud_tgbot import config
 from hcloud_tgbot.hetzner.api import HetznerCloud
 from hcloud_tgbot.utils import send_typing_action

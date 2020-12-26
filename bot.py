@@ -1,6 +1,6 @@
 import os
 
-from hcloud_tgbot.runner import run
+from hcloud_tgbot.handlers import BotHandler
 from hcloud_tgbot import config
 
 
@@ -16,5 +16,5 @@ if __name__ == '__main__':
     print("Bot configured ...")
     print("Running the bot ...")
 
-    run()
-
+    handler = BotHandler()
+    handler.init_bot()
