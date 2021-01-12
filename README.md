@@ -17,7 +17,7 @@ Your bot token which you got from @BotFather.
 A list of users telegram id that are allowed to use the bot. IDs should be separated using '-' (12345678-3215477). You can either get your id by messaging `@get_id_bot` bot or you can run the bot without any allowed users and sends it `/me` command which then you'll get a reply containing your telegram id.
 
 `HETZNER_API_KEY`:
-An API key generated from Hetzner cloud console. Note that only servers that are in API project will be available to manage.
+An API key generated from Hetzner cloud console. Note that only servers that are in the API project will be available to manage.
 
 ### Docker:
 
@@ -57,6 +57,7 @@ Add the required environment variables and then:
 ```
 git clone https://github.com/Navid2zp/hcloud-tg.git
 cd hcloud-tg
+pip install -r requirements.txt
 python bot.py
 ```
 
