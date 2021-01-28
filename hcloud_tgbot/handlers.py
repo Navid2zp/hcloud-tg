@@ -122,7 +122,6 @@ class BotHandler:
     @action_validator
     def action_handler(self, update: Update, context: CallbackContext, action: str, server_id: int):
         """Handles all the server action requests by passing them to the Hetzner API and returns the result"""
-        print(update)
 
         # create a message notifying user that the action is being processed
         msg = context.bot.send_message(
