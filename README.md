@@ -23,7 +23,9 @@ An API key generated from Hetzner cloud console. Note that only servers that are
 
 **Using `docker run`:**
 
-`docker run -e BOT_TOKEN=<BOT_TOKEN> -e ALLOWED_USERS=<ALLOWED_USERS> -e HETZNER_API_KEY=<HETZNER_CLOUD_API> navid2zp/hcloud-tg`
+```
+docker run -e BOT_TOKEN=<BOT_TOKEN> -e ALLOWED_USERS=<ALLOWED_USERS> -e HETZNER_API_KEY=<HETZNER_CLOUD_API> navid2zp/hcloud-tg
+```
 
 **Using `docker-compose`:**
 
@@ -46,7 +48,6 @@ create a file containing environment variables named `env.list` next to `docker-
 BOT_TOKEN=<YOUR_BOT_TOKEN>
 ALLOWED_USERS=<ALLOWED_USERS>
 HETZNER_API_KEY=<YOUR_HETZNER_API_KEY>
-PYTHONUNBUFFERED: 0
 ```
 and then run: `docker-compose up`
 
