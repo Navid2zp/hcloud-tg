@@ -1,4 +1,13 @@
 # hcloud-tg
+
+<p align="center">
+	<img alt="License" src="https://img.shields.io/github/license/Navid2zp/hcloud-tg?style=for-the-badge" />
+	<img alt="Docker size" src="https://img.shields.io/docker/image-size/navid2zp/hcloud-tg?style=for-the-badge" />
+	<img alt="Docker build" src="https://img.shields.io/docker/cloud/build/navid2zp/hcloud-tg?style=for-the-badge" />
+	<img alt="Docker build" src="https://img.shields.io/docker/cloud/automated/navid2zp/hcloud-tg?style=for-the-badge" />
+	<img alt="Docker pulls" src="https://img.shields.io/docker/pulls/navid2zp/hcloud-tg?style=for-the-badge" />
+</p>
+
 Telegram bot for managing Hetzner cloud servers.
 
 <p align="center">
