@@ -1,10 +1,6 @@
 from typing import List
 
 
-global BOT_TOKEN
-global ALLOWED_USERS
-
-
 class Config:
     BOT_TOKEN: str = ""
     ALLOWED_USERS: List[int] = []

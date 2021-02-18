@@ -47,7 +47,6 @@ Here is a list of your servers:
         '''
 
         for server in servers:
-            print(server.name)
             response += f'''
 <b>Server name:</b> {server.name}
 <b>Server status:</b> {status_emoji(server.status)} {server.status}

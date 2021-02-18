@@ -1,6 +1,6 @@
 from typing import List
 
-from telegram import Update, ParseMode, ChatAction
+from telegram import Update, ParseMode, ChatAction, TelegramError
 from telegram.ext import CommandHandler, MessageHandler
 from telegram.ext import Updater, CallbackContext, CallbackQueryHandler, Filters, Handler
 
@@ -115,7 +115,7 @@ class BotHandler:
                 reply_markup=MenuBuilder.server_actions(server_id),
                 parse_mode=ParseMode.HTML,
             )
-        except:
+        except TelegramError:
             pass
 
     @user_validator
