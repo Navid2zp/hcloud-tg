@@ -1,4 +1,13 @@
 # hcloud-tg
+
+<p align="center">
+	<img alt="License" src="https://img.shields.io/github/license/Navid2zp/hcloud-tg?style=flat-square" />
+	<img alt="Docker size" src="https://img.shields.io/docker/image-size/navid2zp/hcloud-tg?style=flat-square" />
+	<img alt="Docker build" src="https://img.shields.io/docker/cloud/build/navid2zp/hcloud-tg?style=flat-square" />
+	<img alt="Docker build" src="https://img.shields.io/docker/cloud/automated/navid2zp/hcloud-tg?style=flat-square" />
+	<img alt="Docker pulls" src="https://img.shields.io/docker/pulls/navid2zp/hcloud-tg?style=flat-square" />
+</p>
+
 Telegram bot for managing Hetzner cloud servers.
 
 <p align="center">
@@ -17,13 +26,15 @@ Your bot token which you got from @BotFather.
 A list of users telegram id that are allowed to use the bot. IDs should be separated using '-' (12345678-3215477). You can either get your id by messaging `@get_id_bot` bot or you can run the bot without any allowed users and sends it `/me` command which then you'll get a reply containing your telegram id.
 
 `HETZNER_API_KEY`:
-An API key generated from Hetzner cloud console. Note that only servers that are in API project will be available to manage.
+An API key generated from Hetzner cloud console. Note that only servers that are in the API project will be available to manage.
 
 ### Docker:
 
 **Using `docker run`:**
 
-`docker run -e BOT_TOKEN=<BOT_TOKEN> -e ALLOWED_USERS=<ALLOWED_USERS> -e HETZNER_API_KEY=<HETZNER_CLOUD_API> navid2zp/hcloud-tg`
+```
+docker run -e BOT_TOKEN=<BOT_TOKEN> -e ALLOWED_USERS=<ALLOWED_USERS> -e HETZNER_API_KEY=<HETZNER_CLOUD_API> navid2zp/hcloud-tg
+```
 
 **Using `docker-compose`:**
 
@@ -46,7 +57,6 @@ create a file containing environment variables named `env.list` next to `docker-
 BOT_TOKEN=<YOUR_BOT_TOKEN>
 ALLOWED_USERS=<ALLOWED_USERS>
 HETZNER_API_KEY=<YOUR_HETZNER_API_KEY>
-PYTHONUNBUFFERED: 0
 ```
 and then run: `docker-compose up`
 
@@ -57,6 +67,7 @@ Add the required environment variables and then:
 ```
 git clone https://github.com/Navid2zp/hcloud-tg.git
 cd hcloud-tg
+pip install -r requirements.txt
 python bot.py
 ```
 
