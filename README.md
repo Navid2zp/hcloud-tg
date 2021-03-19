@@ -23,7 +23,7 @@ hcloud-tg requires some environment variables to work.
 Your bot token which you got from @BotFather.
 
 `ALLOWED_USERS`: 
-A list of users telegram id that are allowed to use the bot. IDs should be separated using '-' (12345678-3215477). You can either get your id by messaging `@get_id_bot` bot or you can run the bot without any allowed users and sends it `/me` command which then you'll get a reply containing your telegram id.
+A list of users telegram id that are allowed to use the bot. IDs should be separated using '-' (12345678-3215477). You can either get your id by messaging `@get_id_bot` bot or you can run the bot without any allowed users and send `/me` command to get a reply containing your telegram id.
 
 `HETZNER_API_KEY`:
 An API key generated from Hetzner cloud console. Note that only servers that are in the API project will be available to manage.
