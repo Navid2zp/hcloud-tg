@@ -71,7 +71,7 @@ pip install -r requirements.txt
 python bot.py
 ```
 
-## Supported actions:
+## Supported actions
 
 - reset
 - reboot
@@ -80,7 +80,7 @@ python bot.py
 - power off
 - root password reset
 
-## Docker hub:
+## Docker hub
 
 https://hub.docker.com/r/navid2zp/hcloud-tg
 
